@@ -1,8 +1,4 @@
 FROM jenkins:2.19.3
-MAINTAINER k.scherban@gmail.com
-
-# Set Java opts
-#ENV JAVA_OPTS="-Xmx2048m"
 
 # Preinstall plugins
 RUN /usr/local/bin/install-plugins.sh \
