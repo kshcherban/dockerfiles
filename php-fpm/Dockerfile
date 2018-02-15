@@ -10,4 +10,4 @@ ENV LOG_STREAM="/tmp/stdout"
 RUN mkfifo $LOG_STREAM && chmod 777 $LOG_STREAM
 COPY run.sh /
 RUN chmod +x /run.sh
-ENTRYPOINT ["/run.sh"]
+CMD ["/run.sh"]
